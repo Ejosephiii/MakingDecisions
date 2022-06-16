@@ -1,26 +1,57 @@
 ////////// PROBLEM 1 //////////
 /*
-  Create a variable called 'lovesCode' and set it equal to true. 
-  Check to see if 'lovesCode' is equal to true or false. 
-  If it is true, console log "I love to code!"
-  If it is not, console log "Coding has its challenges."
+Create a variable called 'lovesCode' and set it equal to true. 
+Check to see if 'lovesCode' is equal to true or false. 
+If it is true, console log "I love to code!"
+If it is not, console log "Coding has its challenges."
 */
 
 //CODE HERE
 
-// For problems 2-3 use the following lines of code:
-var amysAge = 29;
-var brittanisAge = 34;
-var amysBirthYear = 1991;
-var brittanisBirthYear = 1986;
-
-////////// PROBLEM 2 //////////
-
+let lovesCode = true;
+if(lovesCode === true){
+  console.log("I love code!")
+ } else {
+   console.log("Coding has it's challenges")
+ }
+ /*
+ Create a variable called lovesCode
+ Set it equal to true
+ Console.log(lovesCode)
+ write code for its true
+ console.log(I love code)
+ write code for its false
+ console.log(Coding has its challenges)
+ 
+ 
+ 
+ // For problems 2-3 use the following lines of code:
+ var amysAge = 29;
+ var brittanisAge = 34;
+ var amysBirthYear = 1991;
+ var brittanisBirthYear = 1986;
+ 
+ ////////// PROBLEM 2 //////////
+ 
 /*
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
 //CODE HERE
+var amysAge = 29;
+ var brittanisAge = 29;
+ var amysBirthYear = 1991;
+ var brittanisBirthYear = 1986;
+
+if(amysAge > brittanisAge){
+  console.log("Amy is older")
+} else{
+  console.log("Brittani is older")
+}
+
+
+
+
 
 ////////// PROBLEM 3 //////////
 
@@ -29,6 +60,12 @@ var brittanisBirthYear = 1986;
 */
 
 //CODE HERE
+if (amysBirthYear === brittanisBirthYear){
+  console.log("They are the same age")
+} else{
+  console.log("They are not the same age")
+}
+
 
 ////////// PROBLEM 4 //////////
 
@@ -42,6 +79,26 @@ let rain = true;
 
 //CODE HERE
 
+if(temperature >= 80 && rain === true){
+  console.log("Wear a t-shirt and take an umbrella")
+} else if(temperature > 60 && temperature < 80 && rain === true)
+{
+  console.log("Wear a cardigan and take and umbrella")}
+  else if (temperature <= 60 && rain === true){
+    console.log("You should wear a jacked and take an umbrella.")
+  
+  }
+  else if (temperature >= 80 && rain !== true){
+    console.log("You should wear a tank top.")
+  }
+  else if (temperature > 60 && temperature < 80 && rain !== true){
+    console.log("You should wear a vest.")
+  }
+  else if (temperature <= 60 && rain !== true){
+    console.log("You should wear a hoodie.")}
+  
+
+
 ////////// PROBLEM 5 //////////
 
 /*
@@ -49,7 +106,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 0; i< 11; i++){
+  console.log("Hello")
+}
 ////////// PROBLEM 6 //////////
 
 /*
@@ -57,7 +116,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 0; i <11; i++){
+  console.log(i)
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -66,6 +127,9 @@ let rain = true;
 
 //CODE HERE
 
+for (let i = 10; i > 0; i -=1){
+  console.log(i)
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -77,7 +141,10 @@ let passingScore = 7;
 */
 
 //CODE HERE
-
+while (score < passingScore){
+  console.log("Your score is not high enough")
+  score += 1
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
